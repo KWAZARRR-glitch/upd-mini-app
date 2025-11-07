@@ -166,6 +166,19 @@
                 <span id="prestigeLevel">0</span>
             </div>
         </div>
+        <!-- ↓↓↓ ДОБАВЬТЕ ЭТОТ СКРЫТЫЙ БЛОК ↓↓↓ -->
+<div id="prestigeMenu" style="display: none; margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+    <h3>🌟 СИСТЕМА ПРЕСТИЖА</h3>
+    <p>Требуется: <span id="prestigeRequirement">1,000,000</span> 💎</p>
+    <p>Ваш прогресс: <span id="prestigeProgress">0%</span></p>
+    <button class="upgrade-btn" onclick="doPrestige()" id="doPrestigeBtn" disabled>
+        🚀 ВЫПОЛНИТЬ ПРЕСТИЖ
+    </button>
+    <button class="upgrade-btn" onclick="hidePrestigeMenu()" style="margin-top: 10px;">
+        🔙 Назад
+    </button>
+</div>
+<!-- ↑↑↑ ДОБАВЬТЕ ЭТОТ СКРЫТЫЙ БЛОК ↑↑↑ -->
 
         <div class="upgrades-section">
             <h3>🛠 Улучшения</h3>
@@ -303,4 +316,5 @@
         });
     </script>
 </body>
+
 </html>
